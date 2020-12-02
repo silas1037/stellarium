@@ -69,8 +69,8 @@ private:
 	virtual void gotoReceived(unsigned int ra_int, int dec_int) = 0;
 	virtual void syncReceived(unsigned int ra_int, int dec_int) = 0;
 	friend class Connection;
-    
-    class SocketList : public std::list<Socket*>
+	
+	class SocketList : public std::list<Socket*>
 	{
 		public:
 		~SocketList(void) { clear(); }
