@@ -2,8 +2,8 @@ name: Build for Windows
 
 on:
   push:
-    tags:
-      - v*
+  #  tags:
+  #    - v*
   workflow_dispatch:
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
         target: 'desktop'
         version: '5.15.2'
         modules: 'qtscript'
-        arch: 'win64_msvc2019'
+        arch: 'win64_msvc2019_64'
         cached: ${{ steps.cache-qt.outputs.cache-hit }}
     - name: Configure
       run: |
