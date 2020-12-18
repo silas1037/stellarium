@@ -23,9 +23,9 @@ jobs:
       uses: jurplel/install-qt-action@v2
       with:
         target: 'desktop'
-        version: '5.15.2'
+        version: '5.12.10'
         modules: 'qtscript'
-        arch: 'win64_msvc2019_64'
+        arch: 'win32_msvc2017'
         cached: ${{ steps.cache-qt.outputs.cache-hit }}
     - name: Configure
       run: |
@@ -34,7 +34,7 @@ jobs:
         cd build
         md msvc
         cd msvc
-        cmake -DCMAKE_INSTALL_PREFIX=D:/a/stellarium/stellarium/stellarium-bin -G "Visual Studio 16 2019 Win64" -A x64 ../..
+        cmake -DCMAKE_INSTALL_PREFIX=D:/a/stellarium/stellarium/stellarium-bin -G "Visual Studio 15 2017" -A Win32 ../..
         cmake --build . --  /maxcpucount:4 /nologo --target stellarium-installer
     - name: show filetrees
       run: |
