@@ -35,7 +35,8 @@ jobs:
         md msvc
         cd msvc
         cmake -DCMAKE_INSTALL_PREFIX=D:/a/stellarium/stellarium/stellarium-bin -G "Visual Studio 16 2019" -A Win32 ../..
-        cmake --build . --  /maxcpucount:4 /nologo --target stellarium-installer
+        cmake --build .
+#        --  /maxcpucount:4 /nologo --target stellarium-installer
     - name: show filetrees
       run: |
         ls -R .
