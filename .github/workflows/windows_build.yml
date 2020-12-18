@@ -1,0 +1,45 @@
+name: Build for Windows
+
+on:
+  push:
+    tags:
+      - v*
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Cache Qt
+      id: cache-qt
+      uses: actions/cache@v1
+      with:
+        path: ../Qt
+        key: ${{ runner.os }}-QtCache
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v2
+      with:
+        target: 'desktop'
+        version: '5.15.2'
+        modules: 'qtscript'
+        arch: 'win64_msvc2019'
+        cached: ${{ steps.cache-qt.outputs.cache-hit }}
+    - name: Configure
+      run: |
+        md stellarium-bin
+        md build
+        cd build
+        md msvc
+        cd msvc
+        cmake -DCMAKE_INSTALL_PREFIX=D:/a/stellarium/stellarium/stellarium-bin -G "Visual Studio 16 2019 Win64" ../..
+        cmake --build . --  /maxcpucount:4 /nologo --target stellarium-installer
+    - name: show filetrees
+      run: |
+        ls -R .
+    - uses: actions/upload-artifact@v1
+      with:
+        name: Debug-APP
+        path: stellarium-bin
