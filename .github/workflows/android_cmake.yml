@@ -1,4 +1,4 @@
-name: Build for Android CMake
+name: Build for Android CMake (Test)
 
 on:
   push:
