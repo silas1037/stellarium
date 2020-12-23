@@ -1,0 +1,71 @@
+name: Build for Android CMake
+
+on:
+  push:
+    tags:
+      - v*
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[ci skip]') && !contains(github.event.head_commit.message, '[skip ci]')"
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Checkout submodules
+      uses: srt32/git-actions@v0.0.3
+      with:
+        args: git submodule update --init --recursive
+    - name: Cache Qt
+      id: cache-qt
+      uses: actions/cache@v1
+      with:
+        path: ../Qt
+        key: ${{ runner.os }}-QtCache
+    - name: Install Qt
+      uses: jurplel/install-qt-action@v2
+      with:
+        target: 'android'
+        version: '5.15.1'
+        modules: 'qtcharts qtwebengine qtscript'
+        cached: ${{ steps.cache-qt.outputs.cache-hit }}
+    #- name: Install Additional Software
+    #  run: |
+    #    sudo apt install doxygen graphviz librsvg2-bin
+    - name: Configure
+      run: |
+        cmake . \
+          -DANDROID_ABI:STRING=armeabi-v7a \
+          -DANDROID_BUILD_ABI_arm64-v8a:BOOL=OFF \
+          -DANDROID_BUILD_ABI_armeabi-v7a:BOOL=ON \
+          -DANDROID_BUILD_ABI_x86:BOOL=OFF \
+          -DANDROID_BUILD_ABI_x86_64:BOOL=OFF \
+          -DANDROID_NATIVE_API_LEVEL:STRING=16 \
+          -DANDROID_NDK:PATH=$ANDROID_SDK_ROOT/ndk-bundle \
+          -DANDROID_SDK:PATH=$ANDROID_SDK_ROOT \
+          -DANDROID_STL:STRING=c++_shared \
+          -DCMAKE_BUILD_TYPE:STRING=Debug \
+          -DCMAKE_CXX_COMPILER:STRING=$ANDROID_SDK_ROOT/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ \
+          -DCMAKE_C_COMPILER:STRING=$ANDROID_SDK_ROOT/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang \
+          -DCMAKE_FIND_ROOT_PATH:STRING=$Qt5_DIR \
+          -DCMAKE_INSTALL_PREFIX:STRING=android-build/assets \
+          -DCMAKE_PREFIX_PATH:STRING=$Qt5_DIR \
+          -DCMAKE_TOOLCHAIN_FILE:PATH=$ANDROID_SDK_ROOT/ndk-bundle/build/cmake/android.toolchain.cmake \
+          -DQT_QMAKE_EXECUTABLE:STRING=$Qt5_DIR/bin/qmake
+    - name: Compile
+      run: |
+        pwd
+        make
+        make install
+        make apk
+    - name: show filetrees
+      run: |
+        ls -R
+    - uses: actions/upload-artifact@v1
+      with:
+        name: Debug-APK
+        path: android-build/build/outputs/apk/debug/android-build-debug.apk
