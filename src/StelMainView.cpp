@@ -675,6 +675,7 @@ StelMainView::StelMainView(QSettings* settings)
 #endif
 	// We cannot use global mousetracking. Only if mouse is hidden!
 	//setMouseTracking(true);
+    //setWindowFlag(Qt::FramelessWindowHint);
 }
 
 void StelMainView::resizeEvent(QResizeEvent* event)

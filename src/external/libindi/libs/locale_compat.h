@@ -78,7 +78,7 @@ inline static void indi_restore_locale(int category, locale_char_t *prev)
 
 _INDI_C_INLINE static locale_char_t *indi_locale_C_numeric_push()
 {
-    return indi_setlocale(LC_NUMERIC, INDI_LOCALE("C"));
+    return indi_setlocale(LC_NUMERIC, (wchar_t*)("C")); //INDI_LOCALE
 }
 
 _INDI_C_INLINE static void indi_locale_C_numeric_pop(locale_char_t *prev)

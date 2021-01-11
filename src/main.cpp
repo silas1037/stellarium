@@ -17,7 +17,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin Street, Suite 500, Boston, MA  02110-1335, USA.
  */
-
+#define DESKTOP_APP
 #include "StelMainView.hpp"
 #include "StelSplashScreen.hpp"
 #include "StelTranslator.hpp"
@@ -127,6 +127,30 @@ void clearCache()
 	cacheMgr->setCacheDirectory(StelFileMgr::getCacheDir());
 	cacheMgr->clear(); // Removes all items from the cache.
 }
+
+
+#ifdef DESKTOP_APP
+bool enumUserWindowsCB(HWND hwnd, LPARAM lParam)
+{
+    long wflags = GetWindowLong(hwnd, GWL_STYLE);
+    if (!(wflags & WS_VISIBLE)) {
+        return TRUE;
+    };
+
+    HWND sndWnd;
+    if (!(sndWnd=FindWindowEx(hwnd, NULL, "SHELLDLL_DefView", NULL))) {
+        return TRUE;
+    }
+    HWND targetWnd;
+    if (!(targetWnd=FindWindowEx(sndWnd, NULL, "SysListView32", "FolderView"))) {
+        return TRUE;
+    }
+
+    HWND* resultHwnd = (HWND*)lParam;
+    *resultHwnd = targetWnd;
+    return FALSE;
+}
+#endif
 
 // Main stellarium procedure
 int main(int argc, char **argv)
@@ -386,9 +410,19 @@ int main(int argc, char **argv)
 
 	StelMainView mainWin(confSettings);
 	mainWin.show();
+
+#ifdef DESKTOP_APP
+    HWND resultHwnd = NULL;
+    EnumWindows((WNDENUMPROC)enumUserWindowsCB, (LPARAM)&resultHwnd);
+    HWND desktopHwnd = resultHwnd; //findDesktopIconWnd();
+    if(desktopHwnd)
+        SetParent((HWND)mainWin.winId(), desktopHwnd);
+#endif
+
 	SplashScreen::finish(&mainWin);
 	app.exec();
 	mainWin.deinit();
+
 
 	delete confSettings;
 	StelLogger::deinit();
