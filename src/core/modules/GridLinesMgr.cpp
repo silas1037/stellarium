@@ -243,6 +243,7 @@ void viewportEdgeIntersectCallback(const Vec3d& screenPos, const Vec3d& directio
 	d->sPainter->setColor(d->textColor);
 	const bool withDecimalDegree = StelApp::getInstance().getFlagShowDecimalDegrees();
 	const bool useOldAzimuth = StelApp::getInstance().getFlagSouthAzimuthUsage();
+	const float ppx = static_cast<float>(d->sPainter->getProjector()->getDevicePixelsPerPixel());
 
 	QString text;
 	if (d->text.isEmpty())
@@ -250,13 +251,13 @@ void viewportEdgeIntersectCallback(const Vec3d& screenPos, const Vec3d& directio
 		// We are in the case of meridians, we need to determine which of the 2 labels (3h or 15h) to use
 		Vec3d tmpV;
 		d->sPainter->getProjector()->unProject(screenPos, tmpV);
-		double lon, lat, textAngle;
+		double lon, lat, textAngle, raAngle;
 		StelUtils::rectToSphe(&lon, &lat, tmpV);
 		switch (d->frameType)
 		{
 			case StelCore::FrameAltAz:
 			{
-				double raAngle = ::fmod(M_PI-d->raAngle,2.*M_PI);
+				raAngle = ::fmod(M_PI-d->raAngle,2.*M_PI);
 				lon = ::fmod(M_PI-lon,2.*M_PI);
 
 				if (std::fabs(2.*M_PI-lon)<0.001) // We are at meridian 0
@@ -284,7 +285,7 @@ void viewportEdgeIntersectCallback(const Vec3d& screenPos, const Vec3d& directio
 			case StelCore::FrameObservercentricEclipticJ2000:
 			case StelCore::FrameObservercentricEclipticOfDate:
 			{
-				double raAngle = d->raAngle;
+				raAngle = d->raAngle;
 				if (raAngle<0.)
 					raAngle += 2.*M_PI;
 
@@ -309,11 +310,10 @@ void viewportEdgeIntersectCallback(const Vec3d& screenPos, const Vec3d& directio
 					text = StelUtils::radToDmsStrAdapt(textAngle);
 
 				break;			
-			}
-			case StelCore::FrameGalactic:
-			case StelCore::FrameSupergalactic:
+			}			
+			default:			
 			{
-				double raAngle = M_PI-d->raAngle;
+				raAngle = M_PI-d->raAngle;
 				lon = M_PI-lon;
 
 				if (raAngle<0)
@@ -333,32 +333,16 @@ void viewportEdgeIntersectCallback(const Vec3d& screenPos, const Vec3d& directio
 					textAngle = -raAngle-delta+M_PI;
 				}
 
+
 				if (withDecimalDegree)
 					text = StelUtils::radToDecDegStr(textAngle, 4, false, true);
 				else
-					text = StelUtils::radToDmsStrAdapt(textAngle);
-				break;
-			}
-			default:			
-			{
-				if (std::fabs(2.*M_PI-lon)<0.001)
 				{
-					// We are at meridian 0
-					lon = 0.;
+					if (d->frameType == StelCore::FrameGalactic || d->frameType == StelCore::FrameSupergalactic)
+						text = StelUtils::radToDmsStrAdapt(textAngle);
+					else
+						text = StelUtils::radToHmsStrAdapt(textAngle);
 				}
-				const double delta = d->raAngle<M_PI ? M_PI : -M_PI;
-				if (std::fabs(lon-d->raAngle) < 1. || lon==0. || d->raAngle==M_PI)
-					textAngle = d->raAngle;
-				else
-					textAngle = d->raAngle+delta;
-
-				if (d->raAngle+delta==0.)
-					textAngle = M_PI;
-
-				if (withDecimalDegree)
-					text = StelUtils::radToDecDegStr(textAngle, 4, false, true);
-				else
-					text = StelUtils::radToHmsStrAdapt(textAngle);
 			}
 		}
 	}
@@ -369,13 +353,14 @@ void viewportEdgeIntersectCallback(const Vec3d& screenPos, const Vec3d& directio
 	direc.normalize();	
 	float angleDeg = std::atan2(-direc[1], -direc[0])*M_180_PIf;
 	float xshift=6.f;
+	float yshift=6.f;
 	if (angleDeg>90.f || angleDeg<-90.f)
 	{
 		angleDeg+=180.f;
-		xshift=-d->sPainter->getFontMetrics().boundingRect(text).width()-6.f;
+		xshift=-(d->sPainter->getFontMetrics().boundingRect(text).width() + xshift*ppx);
 	}
 
-	d->sPainter->drawText(static_cast<float>(screenPos[0]), static_cast<float>(screenPos[1]), text, angleDeg, xshift, 3);
+	d->sPainter->drawText(static_cast<float>(screenPos[0]), static_cast<float>(screenPos[1]), text, angleDeg, xshift*ppx, yshift*ppx);
 	d->sPainter->setColor(tmpColor);
 	d->sPainter->setBlending(true);
 }
