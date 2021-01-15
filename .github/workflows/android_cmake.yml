@@ -52,7 +52,7 @@ jobs:
           -DANDROID_NDK:PATH=$ANDROID_SDK_ROOT/android-ndk-r21 \
           -DANDROID_SDK:PATH=$ANDROID_SDK_ROOT \
           -DANDROID_STL:STRING=c++_shared \
-          -DCMAKE_BUILD_TYPE:STRING=Debug \
+          -DCMAKE_BUILD_TYPE:STRING=Release \
           -DCMAKE_CXX_COMPILER:STRING=$ANDROID_SDK_ROOT/android-ndk-r21/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ \
           -DCMAKE_C_COMPILER:STRING=$ANDROID_SDK_ROOT/android-ndk-r21/toolchains/llvm/prebuilt/linux-x86_64/bin/clang \
           -DCMAKE_FIND_ROOT_PATH:STRING=$Qt5_DIR \
