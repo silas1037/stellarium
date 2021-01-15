@@ -36,6 +36,10 @@ jobs:
         version: '5.15.1'
         modules: 'qtcharts qtwebengine qtscript'
         cached: ${{ steps.cache-qt.outputs.cache-hit }}
+    - uses: nttld/setup-ndk@v1
+      id: setup-ndk
+      with:
+        ndk-version: r21d
     #- name: Install Additional Software
     #  run: |
     #    sudo apt install doxygen graphviz librsvg2-bin
