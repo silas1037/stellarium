@@ -40,9 +40,10 @@ jobs:
     #  id: setup-ndk
     #  with:
     #    ndk-version: r21d
-    #- name: Install Additional Software
-    #  run: |
-    #    sudo apt install doxygen graphviz librsvg2-bin
+    - name: Install Additional Software
+      run: |
+        wget -q https://dl.google.com/android/repository/android-ndk-r21-linux-x86_64.zip
+        sudo unzip -q android-ndk-r21-linux-x86_64.zip -d $ANDROID_SDK_ROOT
     - name: Configure
       run: |
         cmake . \
@@ -52,16 +53,16 @@ jobs:
           -DANDROID_BUILD_ABI_x86:BOOL=OFF \
           -DANDROID_BUILD_ABI_x86_64:BOOL=OFF \
           -DANDROID_NATIVE_API_LEVEL:STRING=21 \
-          -DANDROID_NDK:PATH=$ANDROID_SDK_ROOT/ndk-bundle \
+          -DANDROID_NDK:PATH=$ANDROID_SDK_ROOT/android-ndk-r21 \
           -DANDROID_SDK:PATH=$ANDROID_SDK_ROOT \
           -DANDROID_STL:STRING=c++_shared \
           -DCMAKE_BUILD_TYPE:STRING=Debug \
-          -DCMAKE_CXX_COMPILER:STRING=$ANDROID_SDK_ROOT/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ \
-          -DCMAKE_C_COMPILER:STRING=$ANDROID_SDK_ROOT/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang \
+          -DCMAKE_CXX_COMPILER:STRING=$ANDROID_SDK_ROOT/android-ndk-r21/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ \
+          -DCMAKE_C_COMPILER:STRING=$ANDROID_SDK_ROOT/android-ndk-r21/toolchains/llvm/prebuilt/linux-x86_64/bin/clang \
           -DCMAKE_FIND_ROOT_PATH:STRING=$Qt5_DIR \
           -DCMAKE_INSTALL_PREFIX:STRING=android-build/assets \
           -DCMAKE_PREFIX_PATH:STRING=$Qt5_DIR \
-          -DCMAKE_TOOLCHAIN_FILE:PATH=$ANDROID_SDK_ROOT/ndk-bundle/build/cmake/android.toolchain.cmake \
+          -DCMAKE_TOOLCHAIN_FILE:PATH=$ANDROID_SDK_ROOT/android-ndk-r21/build/cmake/android.toolchain.cmake \
           -DQT_QMAKE_EXECUTABLE:STRING=$Qt5_DIR/bin/qmake
     - name: Compile
       run: |
