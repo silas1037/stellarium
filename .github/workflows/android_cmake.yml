@@ -11,7 +11,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     if: "!contains(github.event.head_commit.message, '[ci skip]') && !contains(github.event.head_commit.message, '[skip ci]')"
     
     steps:
@@ -36,10 +36,6 @@ jobs:
         version: '5.15.1'
         modules: 'qtcharts qtwebengine qtscript'
         cached: ${{ steps.cache-qt.outputs.cache-hit }}
-    #- uses: nttld/setup-ndk@v1
-    #  id: setup-ndk
-    #  with:
-    #    ndk-version: r21d
     - name: Install Additional Software
       run: |
         wget -q https://dl.google.com/android/repository/android-ndk-r21-linux-x86_64.zip
