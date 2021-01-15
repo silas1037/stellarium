@@ -5,13 +5,13 @@ on:
     tags:
       - v*
     branches:
-      - CICD_0.20.3
+      - CICD
   workflow_dispatch:
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-16.04
     if: "!contains(github.event.head_commit.message, '[ci skip]') && !contains(github.event.head_commit.message, '[skip ci]')"
     
     steps:
@@ -36,10 +36,10 @@ jobs:
         version: '5.15.1'
         modules: 'qtcharts qtwebengine qtscript'
         cached: ${{ steps.cache-qt.outputs.cache-hit }}
-    - uses: nttld/setup-ndk@v1
-      id: setup-ndk
-      with:
-        ndk-version: r21d
+    #- uses: nttld/setup-ndk@v1
+    #  id: setup-ndk
+    #  with:
+    #    ndk-version: r21d
     #- name: Install Additional Software
     #  run: |
     #    sudo apt install doxygen graphviz librsvg2-bin
