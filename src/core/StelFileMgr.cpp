@@ -88,25 +88,25 @@ void StelFileMgr::init()
 		qFatal("Error: cannot create user config directory: %s", e.what());
 	}
 
-#ifdef Q_OS_ANDROID
-    /*for debug paths*/
-    QString exDir = QString::fromLocal8Bit(qgetenv("EXTERNAL_STORAGE")) + "/stellarium";
-    if (!QFile(exDir).exists())
-    {
-        qWarning() << "User config directory does not exist: " << QDir::toNativeSeparators(exDir);
-    }
-    try
-    {
-        makeSureDirExistsAndIsWritable(exDir);
-        fileLocations.append(exDir);  // Higher priority than default dir
-        qDebug() << "User config directory " << QDir::toNativeSeparators(exDir) << " added to list.";
-    }
-    catch (std::runtime_error &e)
-    {
-        qWarning() << "Cannot write to SD card, will not add custom user directory";
-    }
-    /*end debug*/
-#endif
+//#ifdef Q_OS_ANDROID
+//    /*for debug paths*/
+//    QString exDir = QString::fromLocal8Bit(qgetenv("EXTERNAL_STORAGE")) + "/stellarium";
+//    if (!QFile(exDir).exists())
+//    {
+//        qWarning() << "User config directory does not exist: " << QDir::toNativeSeparators(exDir);
+//    }
+//    try
+//    {
+//        makeSureDirExistsAndIsWritable(exDir);
+//        fileLocations.append(exDir);  // Higher priority than default dir
+//        qDebug() << "User config directory " << QDir::toNativeSeparators(exDir) << " added to list.";
+//    }
+//    catch (std::runtime_error &e)
+//    {
+//        qWarning() << "Cannot write to SD card, will not add custom user directory";
+//    }
+//    /*end debug*/
+//#endif
 
 	// OK, now we have the userDir set, add it to the search path
 	fileLocations.append(userDir);
