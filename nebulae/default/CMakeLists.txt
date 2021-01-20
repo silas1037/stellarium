@@ -5,6 +5,6 @@
 INSTALL(DIRECTORY ./ DESTINATION ${SDATALOC}/nebulae/default
 	FILES_MATCHING 
 	PATTERN "*.dat"
-	PATTERN "*.png"
+        PATTERN "*.jpg"
 	PATTERN "*.json"
 	PATTERN "CMakeFiles" EXCLUDE )
