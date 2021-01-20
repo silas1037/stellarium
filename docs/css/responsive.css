@@ -1,0 +1,51 @@
+/* Medium devices (desktops, 992px and up) */
+
+@media (max-width: 992px) {
+    .home-feature {
+        margin-top: 40px;
+    }
+}
+/* Small devices (tablets, 767px and up) */
+
+@media (max-width: 767px) {
+    .home-content {
+        text-align: center;
+    }
+    .service-content {
+        margin-left: 0px;
+        margin-top: -17px;
+    }
+    .single-portfolio {
+        float: left;
+        width: 50%;
+    }
+    .portfolio-filter {
+        text-align: center;
+    }
+    .portfolio-filter a {
+        line-height: 45px;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .footer-menu {
+        text-align: center;
+    }
+    .footer-content {
+        text-align: center;
+    }
+}
+/* Extra Small Devices (Phone, 480px and up) */
+
+@media (max-width: 480px) {
+    .home-content {
+        padding-top: 0px;
+    }
+    .single-portfolio {
+        float: left;
+        width: 100%;
+    }
+    #newsletter input[type="email"] {
+        font-size: 16px;
+    }
+}
