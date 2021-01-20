@@ -10,6 +10,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
+    background: #483F4A;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
@@ -79,7 +80,7 @@ a:hover {
     border-color: #454545;
 }
 .overlay {
-    background: rgba(43, 191, 217, 0.90);
+    background: #483F4A;
 }
 /* NAVIGATION
 ================================================ */
@@ -90,6 +91,7 @@ a:hover {
     padding: 10px 0;
     -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    background: #000000;
 }
 .navbar-brand {
     padding: 5px 15px;
