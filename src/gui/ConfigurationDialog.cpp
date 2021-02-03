@@ -45,7 +45,7 @@
 #include "StarMgr.hpp"
 #include "NebulaMgr.hpp"
 #include "Planet.hpp"
-#ifndef DISABLE_SCRIPTING
+#ifdef ENABLE_SCRIPTING
 #include "StelScriptMgr.hpp"
 #endif
 #include "StelJsonParser.hpp"
@@ -118,7 +118,7 @@ void ConfigurationDialog::retranslate()
 
 		//Script information
 		//(trigger re-displaying the description of the current item)
-		#ifndef DISABLE_SCRIPTING
+		#ifdef ENABLE_SCRIPTING
 		scriptSelectionChanged(ui->scriptListWidget->currentItem()->text());
 		#endif
 
@@ -164,6 +164,7 @@ void ConfigurationDialog::createDialogContent()
 	connect(ui->TitleBar, SIGNAL(movedTo(QPoint)), this, SLOT(handleMovedTo(QPoint)));
 
 	// Main tab
+	#ifdef ENABLE_NLS
 	// Fill the language list widget from the available list
 	QComboBox* cb = ui->programLanguageComboBox;
 	cb->clear();
@@ -180,6 +181,9 @@ void ConfigurationDialog::createDialogContent()
 	updateCurrentSkyLanguage();
 	connect(cb->lineEdit(), SIGNAL(editingFinished()), this, SLOT(updateCurrentSkyLanguage()));
 	connect(cb, SIGNAL(currentIndexChanged(const QString&)), this, SLOT(selectSkyLanguage(const QString&)));
+	#else
+	ui->groupBox_LanguageSettings->hide();
+	#endif
 
 	connect(ui->getStarsButton, SIGNAL(clicked()), this, SLOT(downloadStars()));
 	connect(ui->downloadCancelButton, SIGNAL(clicked()), this, SLOT(cancelDownload()));
@@ -392,7 +396,7 @@ void ConfigurationDialog::createDialogContent()
 	connectBoolProperty(ui->autoChangeLandscapesCheckBox, "LandscapeMgr.flagLandscapeAutoSelection");
 
 	// script tab controls
-	#ifndef DISABLE_SCRIPTING
+	#ifdef ENABLE_SCRIPTING
 	StelScriptMgr& scriptMgr = StelApp::getInstance().getScriptMgr();
 	connect(ui->scriptListWidget, SIGNAL(currentTextChanged(const QString&)), this, SLOT(scriptSelectionChanged(const QString&)));
 	connect(ui->runScriptButton, SIGNAL(clicked()), this, SLOT(runScriptClicked()));
@@ -406,6 +410,9 @@ void ConfigurationDialog::createDialogContent()
 	ui->scriptListWidget->setSortingEnabled(true);
 	populateScriptsList();
 	connect(this, SIGNAL(visibleChanged(bool)), this, SLOT(populateScriptsList()));
+	#else
+	ui->configurationStackedWidget->removeWidget(ui->page_Scripts);
+	delete ui->stackListWidget->takeItem(5);
 	#endif
 
 	// plugins control
@@ -832,6 +839,10 @@ void ConfigurationDialog::saveAllSettings()
 	conf->setValue("viewing/flag_ecliptic_J2000_line",		propMgr->getStelPropertyValue("GridLinesMgr.eclipticJ2000LineDisplayed").toBool());
 	conf->setValue("viewing/flag_ecliptic_J2000_parts",		propMgr->getStelPropertyValue("GridLinesMgr.eclipticJ2000PartsDisplayed").toBool());
 	conf->setValue("viewing/flag_ecliptic_J2000_labels",		propMgr->getStelPropertyValue("GridLinesMgr.eclipticJ2000PartsLabeled").toBool());
+	conf->setValue("viewing/flag_invariable_plane_line",		propMgr->getStelPropertyValue("GridLinesMgr.invariablePlaneLineDisplayed").toBool());
+	conf->setValue("viewing/flag_solar_equator_line",		propMgr->getStelPropertyValue("GridLinesMgr.solarEquatorLineDisplayed").toBool());
+	conf->setValue("viewing/flag_solar_equator_parts",		propMgr->getStelPropertyValue("GridLinesMgr.solarEquatorPartsDisplayed").toBool());
+	conf->setValue("viewing/flag_solar_equator_labels",		propMgr->getStelPropertyValue("GridLinesMgr.solarEquatorPartsLabeled").toBool());
 	conf->setValue("viewing/flag_ecliptic_grid",				propMgr->getStelPropertyValue("GridLinesMgr.eclipticGridDisplayed").toBool());
 	conf->setValue("viewing/flag_ecliptic_J2000_grid",		propMgr->getStelPropertyValue("GridLinesMgr.eclipticJ2000GridDisplayed").toBool());
 	conf->setValue("viewing/flag_meridian_line",			propMgr->getStelPropertyValue("GridLinesMgr.meridianLineDisplayed").toBool());
@@ -1268,7 +1279,7 @@ void ConfigurationDialog::loadAtStartupChanged(int state)
 	}
 }
 
-#ifndef DISABLE_SCRIPTING
+#ifdef ENABLE_SCRIPTING
 void ConfigurationDialog::populateScriptsList(void)
 {
 	QListWidget *scripts = ui->scriptListWidget;

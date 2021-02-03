@@ -380,7 +380,8 @@ IF(ENABLE_SPOUT)
      MARK_AS_ADVANCED(SPOUT_LIBRARY_DLL)
 ENDIF(ENABLE_SPOUT)
 
-SET(ENABLE_SCRIPTING 1 CACHE BOOL "Define whether scripting features should be activated.")
+#SET(ENABLE_SCRIPTING 1 CACHE BOOL "Define whether scripting features should be activated.")
+SET(ENABLE_SCRIPTING 1)
 IF(ENABLE_SCRIPTING)
      # (De-)Activate the script edit console
      SET(ENABLE_SCRIPT_CONSOLE 1 CACHE BOOL "Define whether to build the script console feature.")
