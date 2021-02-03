@@ -175,8 +175,6 @@ IF(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
      SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -stdlib=libc++")
      # share data location:
      SET(SDATALOC "Resources")
-     # home data location:
-     SET(HDATALOC "$ENV{HOME}/Library/Application\ Support/${PROJECT_NAME}")
 elseif(ANDROID)
     SET(SDATALOC ".")
     message("SDATALOC ANDROID")
@@ -185,9 +183,6 @@ elseif(ANDROID)
 ELSE()
      # share data location:
      SET(SDATALOC "share/${PACKAGE}")
-     message(${SDATALOC})
-     # home data location:
-     SET(HDATALOC "$ENV{HOME}/.${PACKAGE}")
 ENDIF()
 
 IF(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_COMPILER_IS_GNUCC)
@@ -384,12 +379,11 @@ ENDIF(ENABLE_SPOUT)
 SET(ENABLE_SCRIPTING 1)
 IF(ENABLE_SCRIPTING)
      # (De-)Activate the script edit console
+     ADD_DEFINITIONS(-DENABLE_SCRIPTING)
      SET(ENABLE_SCRIPT_CONSOLE 1 CACHE BOOL "Define whether to build the script console feature.")
      IF(ENABLE_SCRIPT_CONSOLE)
           ADD_DEFINITIONS(-DENABLE_SCRIPT_CONSOLE)
      ENDIF()
-ELSE()
-     ADD_DEFINITIONS(-DDISABLE_SCRIPTING)
 ENDIF()
 
 SET(STELLARIUM_GUI_MODE Standard CACHE STRING "Choose the type of GUI to build, options are: Standard, None")
