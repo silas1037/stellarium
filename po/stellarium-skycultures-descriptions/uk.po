@@ -5,14 +5,15 @@
 # 
 # Translators:
 # Yuri Chornoivan <yurchor@ukr.net>, 2021
+# Alexander Wolf <alex.v.wolf@gmail.com>, 2021
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-03-16 22:04+0700\n"
+"POT-Creation-Date: 2021-03-28 11:47+0700\n"
 "PO-Revision-Date: 2020-01-06 16:35+0000\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>, 2021\n"
+"Last-Translator: Alexander Wolf <alex.v.wolf@gmail.com>, 2021\n"
 "Language-Team: Ukrainian (https://www.transifex.com/stellarium/teams/80998/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +27,7 @@ msgid "Al-Sufi (\"Book of Fixed Stars\")"
 msgstr "Аль-Суфі («Книга нерухомих зірок»)"
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:3
+#: ../../skycultures/al-sufi/description.en.utf8:2
 msgid ""
 "The Book of Fixed Stars was written shortly before 964 AD. Dr. Paul "
 "Kunitzsch described it as \"the most outstanding among the works of the "
@@ -71,7 +72,7 @@ msgstr ""
 "довіряючи каталогу зірок Птолемея."
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:6
+#: ../../skycultures/al-sufi/description.en.utf8:3
 msgid ""
 "An important aspect of the general discussion section is Al-Sufi method of "
 "facilitating the star identification. He describes each individual star in "
@@ -105,13 +106,13 @@ msgstr ""
 "href=\"#footnote-3\">[3]</a></sup> та дослідження автора картини зоряного "
 "неба."
 
-#. type: Content of: <p><h2>
-#: ../../skycultures/al-sufi/description.en.utf8:7
+#. type: Content of: <h2>
+#: ../../skycultures/al-sufi/description.en.utf8:5
 msgid "Angular distance units used by Al-Sufi"
 msgstr "Одиниці кутової відстані, які використовував аль-Суфі"
 
 #. type: Content of: <p><p><p><p><p><p><p><p><p>
-#: ../../skycultures/al-sufi/description.en.utf8:11
+#: ../../skycultures/al-sufi/description.en.utf8:9
 #: ../../skycultures/maya/description.en.utf8:13
 #: ../../skycultures/maya/description.en.utf8:16
 #: ../../skycultures/maya/description.en.utf8:19
@@ -130,134 +131,134 @@ msgstr "Одиниці кутової відстані, які використ�
 msgid "&nbsp;"
 msgstr "&nbsp;"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:12
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:10
 msgid "<b>Schjellerup</b>"
 msgstr "<b>Шєллеруп</b>"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:13
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:11
 msgid "<b>Khalid</b>"
 msgstr "<b>Халід</b>"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:16
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:14
 msgid "<b>unit</b>"
 msgstr "<b>одиниця</b>"
 
-#. type: Content of: <p><table><tr><td>
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:15
 #: ../../skycultures/al-sufi/description.en.utf8:17
-#: ../../skycultures/al-sufi/description.en.utf8:19
 msgid "<b>cubits</b>"
 msgstr "<b>лікті</b>"
 
-#. type: Content of: <p><table><tr><td>
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:16
 #: ../../skycultures/al-sufi/description.en.utf8:18
-#: ../../skycultures/al-sufi/description.en.utf8:20
 msgid "<b>Angular Value</b>"
 msgstr "<b>Значення кута</b>"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:23
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:21
 msgid "spear"
 msgstr "спис"
 
-#. type: Content of: <p><table><tr><td>
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:22
 #: ../../skycultures/al-sufi/description.en.utf8:24
-#: ../../skycultures/al-sufi/description.en.utf8:26
 msgid "6 cubits"
 msgstr "6 ліктів"
 
-#. type: Content of: <p><table><tr><td>
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:23
 #: ../../skycultures/al-sufi/description.en.utf8:25
-#: ../../skycultures/al-sufi/description.en.utf8:27
 msgid "14°"
 msgstr "14°"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:30
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:28
 msgid "Man-Height"
 msgstr "Зріст людини"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:33
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:31
 msgid "3 cubits"
 msgstr "3 ліктя"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:34
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:32
 msgid "7°"
 msgstr "7°"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:37
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:35
 msgid "cubit"
 msgstr "лікоть"
 
-#. type: Content of: <p><table><tr><td>
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:36
 #: ../../skycultures/al-sufi/description.en.utf8:38
-#: ../../skycultures/al-sufi/description.en.utf8:40
 msgid "1 cubit"
 msgstr "1 лікоть"
 
-#. type: Content of: <p><table><tr><td>
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:37
 #: ../../skycultures/al-sufi/description.en.utf8:39
-#: ../../skycultures/al-sufi/description.en.utf8:41
 msgid "2°20'"
 msgstr "2°20'"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:44
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:42
 msgid "span"
 msgstr "п'ядь"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:45
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:43
 msgid "1/3 of a cubit"
 msgstr "1/3 ліктя"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:46
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:44
 msgid "47'"
 msgstr "47'"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:47
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:45
 msgid "1/2 of a cubit"
 msgstr "1/2 ліктя"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:48
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:46
 msgid "1°10'"
 msgstr "1°10'"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:51
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:49
 msgid "finger"
 msgstr "палець"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:52
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:50
 msgid "1/32 of a cubit"
 msgstr "1/32 ліктя"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:53
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:51
 msgid "4.4'"
 msgstr "4.4'"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:54
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:52
 msgid "1/16 of a cubit"
 msgstr "1/16 ліктя"
 
-#. type: Content of: <p><table><tr><td>
-#: ../../skycultures/al-sufi/description.en.utf8:55
+#. type: Content of: <table><tr><td>
+#: ../../skycultures/al-sufi/description.en.utf8:53
 msgid "8.75'"
 msgstr "8.75'"
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:60
+#: ../../skycultures/al-sufi/description.en.utf8:57
 msgid ""
 "Another important aspect of Al-Sufi book is his record of the indigenous "
 "Arabic star names falling under each constellation, and the exact "
@@ -271,12 +272,12 @@ msgstr ""
 "птолемеїв та арабський."
 
 #. type: Content of: <h2>
-#: ../../skycultures/al-sufi/description.en.utf8:62
+#: ../../skycultures/al-sufi/description.en.utf8:59
 msgid "The Sky Culture"
 msgstr "Картина зоряного неба"
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:64
+#: ../../skycultures/al-sufi/description.en.utf8:60
 msgid ""
 "This sky culture is a result of a research done on several manuscripts of "
 "the book, oldest of which is the <a "
@@ -293,7 +294,7 @@ msgstr ""
 "144, датований 1009 р. н. е.</a>."
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:67
+#: ../../skycultures/al-sufi/description.en.utf8:61
 msgid ""
 "First, the manuscripts of the Book of Fixed Stars were critically edited, "
 "and the text was produced. Second, each member star of the 48 constellations"
@@ -316,7 +317,7 @@ msgstr ""
 "href=\"#footnote-4\">[4]</a></sup>."
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:70
+#: ../../skycultures/al-sufi/description.en.utf8:62
 msgid ""
 "The sky culture stick figures of the constellations are the images in the "
 "Ulugh Beg manuscript of the Book of Fixed Stars, extracted, and adapted for "
@@ -347,7 +348,7 @@ msgstr ""
 "астеризмів та файлів ліній астеризмів."
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:73
+#: ../../skycultures/al-sufi/description.en.utf8:63
 msgid ""
 "The translation of star descriptions from Arabic into English was extracted "
 "from Ernie Wright website<sup><a href=\"#footnote-6\">[6]</a></sup> which "
@@ -362,7 +363,7 @@ msgstr ""
 " для узгодження зі словами, які використано аль-Суфі."
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:77
+#: ../../skycultures/al-sufi/description.en.utf8:64
 msgid ""
 "The single source of the sky culture is the Book of Fixed Stars and the "
 "objective is to give a faithful representation of the book content."
@@ -371,7 +372,7 @@ msgstr ""
 " є створення достовірного представлення вмісту книги."
 
 #. type: Content of: <h3>
-#: ../../skycultures/al-sufi/description.en.utf8:79
+#: ../../skycultures/al-sufi/description.en.utf8:66
 #: ../../skycultures/almagest/description.en.utf8:473
 #: ../../skycultures/mulapin/description.en.utf8:549
 #: ../../skycultures/seleucid/description.en.utf8:464
@@ -379,7 +380,7 @@ msgid "Fair Use"
 msgstr "Умови ліцензування"
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:80
+#: ../../skycultures/al-sufi/description.en.utf8:67
 msgid ""
 "This sky culture is provided for free under CC BY-ND 4.0 International "
 "Public License (share-alike, do not change it without consulting the "
@@ -392,7 +393,7 @@ msgstr ""
 " роботу посилалися відповідно до загальних правил."
 
 #. type: Content of: <p><h3>
-#: ../../skycultures/al-sufi/description.en.utf8:82
+#: ../../skycultures/al-sufi/description.en.utf8:69
 #: ../../skycultures/anutan/description.en.utf8:45
 #: ../../skycultures/arabic_moon_stations/description.en.utf8:239
 #: ../../skycultures/aztec/description.en.utf8:61
@@ -413,23 +414,23 @@ msgid "Author"
 msgstr "Автор"
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:83
+#: ../../skycultures/al-sufi/description.en.utf8:70
 msgid ""
-"Book of Fixed Stars sky culture was compiled and added to Stellarium by "
-"Khalid Al-Ajaji: turath.alfalak@gmail.com"
+"This sky culture was compiled and added to Stellarium by Khalid Al-Ajaji: "
+"turath.alfalak@gmail.com"
 msgstr ""
 "Картину зоряного неба «Книги нерухомих зірок» було створено і додано до "
 "Stellarium Халідом Аль-Аджаджі: turath.alfalak@gmail.com"
 
 #. type: Content of: <h3>
-#: ../../skycultures/al-sufi/description.en.utf8:85
+#: ../../skycultures/al-sufi/description.en.utf8:72
 #: ../../skycultures/chinese/description.en.utf8:2965
 #: ../../skycultures/sami/description.en.utf8:57
 msgid "Notes"
 msgstr "Нотатки"
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:86
+#: ../../skycultures/al-sufi/description.en.utf8:73
 msgid ""
 "[1] The Arabs and the Stars, Paul Kunitzsch,The Astronomer Abu'L-Husayn Al-"
 "Sufi And His Book On The Constellations, XI, pg 57. Northampton [England]: "
@@ -440,12 +441,12 @@ msgstr ""
 "Variorum Reprints, 1989."
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:88
+#: ../../skycultures/al-sufi/description.en.utf8:75
 msgid "[2] See Al-Sufi description in his book of the 14th star in Auriga."
 msgstr "[2] Див. опис аль-Суфі у його книзі 14-ї зірки у Візничому."
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:90
+#: ../../skycultures/al-sufi/description.en.utf8:77
 msgid ""
 "[3] DESCRIPTIONS DES ETOILES FIXES, traduction littérale avec des notes par "
 "H C F C Schjellerup, St Petersbourg, 1874, pg 26-27."
@@ -454,7 +455,7 @@ msgstr ""
 "H C F C Schjellerup, St Petersbourg, 1874, pg 26-27."
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:92
+#: ../../skycultures/al-sufi/description.en.utf8:79
 msgid ""
 "[4] <a "
 "href=\"https://drive.google.com/drive/folders/1s6JXzftwjMQ5rgZoGE3718EtBLBZtjzr?usp=sharing\""
@@ -467,7 +468,7 @@ msgstr ""
 "критикою, коментарі Халіда Альаджаджі</a>."
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:94
+#: ../../skycultures/al-sufi/description.en.utf8:81
 msgid ""
 "[5] <a href=\"https://gallica.bnf.fr/ark:/12148/btv1b60006156.r=.langEN\" "
 "class='external text' rel=\"nofollow\">Oulough Beg copy of ʿAbd al-Raḥmān "
@@ -480,7 +481,7 @@ msgstr ""
 "France Ms. Arabe 5036</a>."
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:96
+#: ../../skycultures/al-sufi/description.en.utf8:83
 msgid ""
 "[6] <a href=\"http://www.etwright.org/astro/almagest.html#cat\" "
 "class='external text' rel=\"nofollow\">Seeing Ancient Stars, Visualization "
@@ -491,7 +492,7 @@ msgstr ""
 "каталогу Альмагеста</a>."
 
 #. type: Content of: <p>
-#: ../../skycultures/al-sufi/description.en.utf8:98
+#: ../../skycultures/al-sufi/description.en.utf8:85
 msgid ""
 "[7] Ptolemy’s ALMAGEST, G. J. Toomer, Princeton University Press, 2nd ed., "
 "1998."
@@ -2136,7 +2137,6 @@ msgstr ""
 
 #. type: Content of: <h3>
 #: ../../skycultures/almagest/description.en.utf8:482
-#: ../../skycultures/arabic/description.en.utf8:36
 #: ../../skycultures/belarusian/description.en.utf8:42
 #: ../../skycultures/boorong/description.en.utf8:220
 #: ../../skycultures/chinese/description.en.utf8:2984
@@ -2601,413 +2601,6 @@ msgid ""
 msgstr ""
 "Записи цієї картини зоряного неба було створено користувачем Stellarium "
 "<i>Dan Smale</i>, d.smale(at)niwa.co.nz"
-
-#. type: Content of: <h1>
-#: ../../skycultures/arabic/description.en.utf8:1
-msgid "Arabic"
-msgstr "Арабська"
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:2
-msgid ""
-"This Arabic sky culture, which is in use now for more than a thousand years,"
-" had been influenced greatly by Greek astronomy, particularly Ptolemy's "
-"astronomy."
-msgstr ""
-"На цю арабську картину зоряного неба, якою користуються вже більше тисячі "
-"років, значний вплив мала грецька астрономія, зокрема птолемеєва астрономія."
-
-#. type: Content of: <p><a>
-#: ../../skycultures/arabic/description.en.utf8:3
-msgid ""
-"<a href=\"http://www.ianridpath.com/startales/startales1b.htm\" "
-"class='external text' rel=\"nofollow\">"
-msgstr ""
-"<a href=\"http://www.ianridpath.com/startales/startales1b.htm\" "
-"class='external text' rel=\"nofollow\">"
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:3
-msgid ""
-"</a> The depiction of Orion, as seen from Earth (left) and a mirror-image, "
-"from a 13th-century copy of al-Sufi's Book of the Fixed Stars. In this "
-"version, Orion's shield has become a long sleeve, typical of Islamic dress."
-msgstr ""
-"</a>Зображення сузір’я Оріона, вигляд з Землі (ліворуч), та віддзеркалене "
-"зображення з копії XIII ст. «Книги нерухомих зірок» аль-Суфі. У цій версії "
-"щит Оріона стає довгим рукавом, типовим для ісламського одягу."
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:4
-msgid ""
-"Ptolemy, the Greek astronomer who lived and worked around 100-178 CE in "
-"Alexandria, Egypt, collected ancient Greek descriptions of 1,022 stars in "
-"his famous book The Great System of Astronomy, popularised under its "
-"shortened Arabic title, the Almagest. Ptolemy's catalogue of stars arranged "
-"into 48 constellations, with estimates of their brightness, based largely on"
-" the observations of the Greek earlier astronomers, such as Hipparchus."
-msgstr ""
-"Птолемей, грецький астроном, який жив і працював близько 100-178 р. н.е. у "
-"Александрії, Єгипет, зібрав давньогрецькі описи 1.022 зірок у своїй "
-"знаменитій книзі «Математичний трактат з астрономії». Ця книга набула "
-"популярності зі скороченою арабською назвою, «Альмагест». Каталог зірок "
-"Птолемея поділено між 48 сузір'ями і впорядковано за яскравістю зірок на "
-"основі, в основному, вимірювань виконаних попередниками Птолемея, зокрема "
-"Гіппархом."
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:5
-msgid ""
-"Ptolemy's book was translated twice into Arabic in the 9th century and "
-"became famous. Many of the Arabic-language star descriptions in the Almagest"
-" came to be used widely as names for stars."
-msgstr ""
-"Книгу Птолемея було двічі перекладено арабською у IX столітті, вона набула "
-"значної популярності. Багато описів зірок у арабському перекладі "
-"«Альмагеста» набули поширення як назви зірок."
-
-#. type: Content of: <p><h3>
-#: ../../skycultures/arabic/description.en.utf8:6
-#: ../../skycultures/belarusian/description.en.utf8:8
-#: ../../skycultures/chinese_contemporary/description.en.utf8:5
-#: ../../skycultures/macedonian/description.en.utf8:4
-#: ../../skycultures/mongolian/description.en.utf8:15
-#: ../../skycultures/tupi/description.en.utf8:4
-#: ../../skycultures/western/description.en.utf8:4
-#: ../../skycultures/western_SnT/description.en.utf8:4
-msgid "Constellations"
-msgstr "Сузір'я"
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:7
-msgid ""
-"This Arabic sky culture uses the classical 48 constellations of the Greeks. "
-"These constellations were described by several Arab and Islamic authors, One"
-" of those who left an indelible influence on the Arabic observation and "
-"study of stars is the astronomer Abū al-Husayn ‘Abd Al-Rahmān al-Sūfī "
-"(903-986), known also by his Latinized name of Azophi, who systematically "
-"revised Ptolemy's catalogue of stars. Al-Sūfī produced a revised and updated"
-" version of Ptolemy's Almagest in a major book called Kitab suwar al-kawakib"
-" (The Book of Fixed Stars), completed around 964 CE. Built on the basis of "
-"the Greek astronomical heritage, the work of Al-Sūfī contained a listing of "
-"the Arabs' own star names, magnitudes determined by al-Sūfī himself, and two"
-" drawings of each constellation, one as it is seen in the sky and one "
-"reversed right to left as it would appear on a celestial globe. The oldest "
-"surviving copy was produced by his son around 1010 CE and is preserved in "
-"the Bodleian Library, Oxford (MS Marsh 144)."
-msgstr ""
-"У арабській картині зоряного неба використано класичні грецькі сузір'я. Ці "
-"сузір’я було описано кількома арабськими і ісламськими авторами, один з яких"
-" значно вплинув на решту арабських спостерігачів неба та вчених. Цим "
-"астрономом був Абу аль-Хусейн Абд аль-Рахман аль-Суфі (903-986), відомий "
-"також за латинізованим ім’ям Азофі. Він виконав систематичну ревізію "
-"каталогу зірок Птолемея. Аль-Суфі створив переглянуту і оновлену версію "
-"птолемеєвого  у своїй основній праці під назвою «Кітаб сувар аль-кавакіб» "
-"(«Книга нерухомих зірок»), роботу над якою було завершено у 964 р. н.е. "
-"Побудована на спадку грецької астрономії, ця робота містить список власних "
-"арабських назв зірок, величини яких визначено самим Аль-Суфі, а також по два"
-" малюнки кожного сузір’я: один — вигляд на небі, інший — дзеркальна проекція"
-" на небесній сфері. Найстаріша з копій праці, що збереглися, була створена "
-"його сином близько 1010 р. н.е.. Ця копія зберігається у бібліотеці імені "
-"Бодлея у Оксфорді (MS Marsh 144)."
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:8
-msgid ""
-"<a href=\"http://www.atlascoelestis.com/alsufi%20Suwar.htm\">In this link "
-"you can see the beautiful illustrations of constellations and sample star "
-"tables in an old manuscript of Al-Sufi book.</a>"
-msgstr ""
-"<a href=\"http://www.atlascoelestis.com/alsufi%20Suwar.htm\">За цим "
-"посиланням ви можете переглянути чудові ілюстрації сузір’їв та зразки "
-"зоряних таблиць у давньому рукописі книги Аль-Суфі.</a>"
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:9
-msgid "Cetus as seen in the sky"
-msgstr "Видима з Землі форма сузір’я Кита"
-
-#. type: Content of: <h3>
-#: ../../skycultures/arabic/description.en.utf8:10
-msgid "The origin of star names"
-msgstr "Походження назв зірок"
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:11
-msgid ""
-"Regardless of origin, almost all star names belong to old traditions. They "
-"are a part of the collective cultural heritage of humanity."
-msgstr ""
-"Незалежно від походження, майже всі назви зірок є дуже давніми. Вони є "
-"частиною спільного культурного спадку людства."
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:12
-msgid ""
-"Official star names are essentially limited to the old names, and typically "
-"only bright stars have names. The majority of stars names are related to "
-"their constellation, e.g., the star Deneb means \"tail\" and labels that "
-"part of Cygnus (the Swan)."
-msgstr ""
-"Офіційний перелік назв зірок обмежено старими назвами, типово назви мають "
-"лише найяскравіші зірки. Більшість назв зірок пов’язано з сузір’ями, у яких "
-"вони перебувають, наприклад назва зірки Денеб означає «хвіст» і позначає "
-"частину сузір’я Лебедя."
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:13
-msgid ""
-"Others describe the star itself, such as Sirius, which translates literally "
-"as \"scorching\", apt enough for the brightest star in the sky. Quite a lot "
-"of prominent stars bear Arabic names, in which \"al\" corresponds to the "
-"article \"the\" and often appears in front, e.g., \"Algol\", \"The Ghoul\". "
-"Its inclusion has become somewhat arbitrary over time. Hence, several star "
-"names of Arabic origin are given elsewhere with or without the al- prefix. "
-"Most other names of stars inherited from the past have Greek, Latin or "
-"Chinese labels."
-msgstr ""
-"Інші є описом самої зірки, зокрема Сіріус, що буквально перекладається як "
-"«спекотний», достатньо вдало для найяскравішої зірки нічного неба. Доволі "
-"багато яскравих зірок мають арабські назви, у яких «аль» відповідає артиклю "
-"«the» (цей) і часто додається як префікс, наприклад «Алгол», — «Вампір». "
-"Додавання цього префікса з часом набуло форми довільності, тому декілька "
-"назв зірок мають арабське походження, але не містять префікса «аль-». "
-"Більшість інших давніх назв зірок мають грецькі, латинські або китайські "
-"корені."
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:14
-msgid ""
-"When the Arabic texts were translated into Latin beginning from the 12th "
-"century, the Arabic tradition of star names was passed down to the Latin "
-"world. However, this happened often in a highly corrupted form that either "
-"changed the meaning, or in extreme cases gave birth to words with no meaning"
-" at all. Other names were mistakenly transferred from one star to another, "
-"so that a name might even refer to a different constellation (Greek or "
-"Arabic) rather than to the one of the star's actual residence."
-msgstr ""
-"Коли арабські тексти почали перекладатися латинською на початку XII "
-"століття, арабські традиційні назви зірок дісталися до західноєвропейського "
-"світу. Але це проникнення часто відбувалося у дуже спотвореній формі або зі "
-"зміною значення, або взагалі з породженням слів, які не мають ніякого сенсу."
-" Деякі назви було помилково приписано іншим зіркам, отже назву могло бути "
-"приписано навіть зірці з іншого сузір’я (грецького або арабського), а зовсім"
-" не того, де мала знаходитися зірка."
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:15
-msgid ""
-"Nevertheless, even with these shortcomings, the majority of star names "
-"adopted since the Renaissance are Arabic in origin."
-msgstr ""
-"Як би там не сталося, але навіть з цими недоліками більшість назв зірок, які"
-" було запозичено з часу Відродження, мають арабське походження."
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:16
-msgid ""
-"Local tradition of the peoples of Islamic lands in the Arabian Peninsula and"
-" in the Middle East had their own names for various bright stars such as "
-"Aldebaran, and they commonly regarded single stars as representing animals "
-"or people. For example, the stars we know as &alpha; and &beta; Ophiuchi "
-"were regarded by them as a shepherd and his dog, while neighbouring stars "
-"made up the outlines of a field with sheep. Some of the Arabic names were "
-"already so many centuries old that their meanings were lost even to al-Sūfī "
-"and his contemporaries, and they remain unknown today. Other star names used"
-" by al-Sūfī and his compatriots were direct translations of Ptolemy's "
-"descriptions. For example, the star name Fomalhaut comes from the Arabic "
-"meaning \"mouth of the southern fish\", which is where Ptolemy had described"
-" it in the Almagest."
-msgstr ""
-"У місцевих традиціях ісламських країн Аравійського півострова та Близького "
-"Сходу є власні назви для різноманітних яскравих зірок, зокрема Альдебарана, "
-"окремі зірки часто уявляються мешканцями цих земель, тваринами або людьми. "
-"Наприклад, зірки, які ми знаємо як альфу та бету Змієносця позначали пастуха"
-" і його собаку, а сусідні зірки утворювали обриси поля з вівцями. Деякі з "
-"арабських назв такі давні, що їхнє значення не було відоме навіть <em>аль-"
-"Суфі</em> та його сучасникам, отже залишається невідомим і зараз. Інші назви"
-" зірок, які використовував <em>аль-Суфі</em> та його співвітчизники, були "
-"буквальними перекладами описів Птолемея. Наприклад, назва зірки Фомальгаут "
-"походить від арабського виразу «рот південної риби», оскільки саме там цю "
-"зірку Птолемей  розмістив у праці «Альмагест»."
-
-#. type: Content of: <h3>
-#: ../../skycultures/arabic/description.en.utf8:17
-#: ../../skycultures/aztec/description.en.utf8:31
-#: ../../skycultures/belarusian/description.en.utf8:31
-#: ../../skycultures/chinese/description.en.utf8:2973
-#: ../../skycultures/chinese_contemporary/description.en.utf8:14
-#: ../../skycultures/chinese_medieval/description.en.utf8:29
-#: ../../skycultures/dakota/description.en.utf8:50
-#: ../../skycultures/egyptian/description.en.utf8:7
-#: ../../skycultures/hawaiian_starlines/description.en.utf8:86
-#: ../../skycultures/inuit/description.en.utf8:25
-#: ../../skycultures/japanese_moon_stations/description.en.utf8:273
-#: ../../skycultures/korean/description.en.utf8:7
-#: ../../skycultures/macedonian/description.en.utf8:62
-#: ../../skycultures/maori/description.en.utf8:4
-#: ../../skycultures/navajo/description.en.utf8:6
-#: ../../skycultures/norse/description.en.utf8:3
-#: ../../skycultures/ojibwe/description.en.utf8:41
-#: ../../skycultures/sardinian/description.en.utf8:4
-#: ../../skycultures/tupi/description.en.utf8:17
-#: ../../skycultures/vanuatu_netwar/description.en.utf8:53
-#: ../../skycultures/western/description.en.utf8:14
-#: ../../skycultures/western_SnT/description.en.utf8:12
-#: ../../skycultures/western_rey/description.en.utf8:73
-msgid "External links"
-msgstr "Зовнішні посилання:"
-
-#. type: Content of: <ul><li>
-#: ../../skycultures/arabic/description.en.utf8:19
-msgid ""
-"<a href=\"http://en.wikipedia.org/wiki/Abd_al-Rahman_al-Sufi\" "
-"class='external text' rel=\"nofollow\">Abd al-Rahman Al-Sufi</a> article at "
-"Wikipedia"
-msgstr ""
-"<a rel=\"nofollow\" href=\"http://en.wikipedia.org/wiki/Abd_al-Rahman_al-"
-"Sufi\" class=\"external text\">Абд Аль-Рахман Аль-Суфі</a>, стаття у "
-"Вікіпедії"
-
-#. type: Content of: <ul><li>
-#: ../../skycultures/arabic/description.en.utf8:20
-msgid ""
-"<a href=\"http://www.atlascoelestis.com/alsufi%20Suwar.htm\" class='external"
-" text' rel=\"nofollow\">Constellations Illustrations by Al-Sufi</a>: Images "
-"of a manuscript of Al-Sufi book with sample artistic illustrations and star "
-"table samples."
-msgstr ""
-"<a href=\"http://www.atlascoelestis.com/alsufi%20Suwar.htm\" class='external"
-" text' rel=\"nofollow\">Ілюстрації сузір’їв Аль-Суфі</a> Зображення з книги "
-"Аль-Суфі зі зразками художніх ілюстрацій та зразками зоряної таблиці."
-
-#. type: Content of: <ul><li>
-#: ../../skycultures/arabic/description.en.utf8:21
-msgid ""
-"<a "
-"href=\"http://gallica.bnf.fr/ark:/12148/btv1b60006156.image.f7.pagination\" "
-"class='external text' rel=\"nofollow\">The Original \"Ulg Beack\" "
-"manuscripte of the \"Kitab suwar al-kawakib\" (The Book of Fixed Stars)</a> "
-"Paris Digital Library \"Gallica\"."
-msgstr ""
-"<a "
-"href=\"http://gallica.bnf.fr/ark:/12148/btv1b60006156.image.f7.pagination\" "
-"class='external text' rel=\"nofollow\">Оригінальна версія манускрипту «Кітаб"
-" сувар аль-кавакіб», приготована для Улугбека (Книга нерухомих зірок)</a> "
-"Паризька цифрова бібліотека «Gallica»."
-
-#. type: Content of: <ul><li>
-#: ../../skycultures/arabic/description.en.utf8:22
-msgid ""
-"<a href=\"http://en.wikipedia.org/wiki/List_of_Arabic_star_names\" "
-"class='external text' rel=\"nofollow\">List of Arabic Star Names</a>: "
-"article at Wikipedia."
-msgstr ""
-"<a href=\"http://en.wikipedia.org/wiki/List_of_Arabic_star_names\" "
-"class='external text' rel=\"nofollow\">Список арабських назв зірок</a> — "
-"стаття у Вікіпедії."
-
-#. type: Content of: <ul><li>
-#: ../../skycultures/arabic/description.en.utf8:23
-msgid ""
-"<a "
-"href=\"http://penelope.uchicago.edu/Thayer/E/Gazetteer/Topics/astronomy/_Texts/secondary/ALLSTA/home.html\""
-" class='external text' rel=\"nofollow\">Star Names — Their Lore and "
-"Meaning</a>: Richard Hinckley Allen: Star Names — Their Lore and Meaning."
-msgstr ""
-"<a "
-"href=\"http://penelope.uchicago.edu/Thayer/E/Gazetteer/Topics/astronomy/_Texts/secondary/ALLSTA/home.html\""
-" class='external text' rel=\"nofollow\">Назви зірок — знання про них та їхнє"
-" значення</a> Річард Гінклі Аллен (Richard Hinckley Allen): Star Names — "
-"Their Lore and Meaning (Назви зірок — знання про них та їхнє значення)."
-
-#. type: Content of: <ul><li>
-#: ../../skycultures/arabic/description.en.utf8:24
-msgid ""
-"<a href=\"http://www.muslimheritage.com/article/arabic-star-names-treasure-"
-"knowledge-shared-world\" class='external text' rel=\"nofollow\">Islamic "
-"science heritage article</a>: Arabic Star Names: A Treasure of Knowledge "
-"Shared by the World."
-msgstr ""
-"<a href=\"http://www.muslimheritage.com/article/arabic-star-names-treasure-"
-"knowledge-shared-world\" class='external text' rel=\"nofollow\">Ісламський "
-"науковий спадок</a> стаття: «Арабські назви зірок: скарби знання для усього "
-"світу»."
-
-#. type: Content of: <h3>
-#: ../../skycultures/arabic/description.en.utf8:26
-#: ../../skycultures/aztec/description.en.utf8:51
-#: ../../skycultures/mulapin/description.en.utf8:556
-#: ../../skycultures/seleucid/description.en.utf8:468
-msgid "Thanks to"
-msgstr "Подяки"
-
-#. type: Content of: <ul><li>
-#: ../../skycultures/arabic/description.en.utf8:28
-msgid ""
-"<a href=\"http://www.jas.org.jo/forum/viewtopic.php\" class='external text' "
-"rel=\"nofollow\">The Arab Astronomy Forum.</a>"
-msgstr ""
-"<a href=\"http://www.jas.org.jo/forum/viewtopic.php\" class='external text' "
-"rel=\"nofollow\">Форуму з арабської астрономії.</a>"
-
-#. type: Content of: <ul><li>
-#: ../../skycultures/arabic/description.en.utf8:29
-msgid ""
-"<a href=\"http://www.icoproject.org/star.html\" class='external text' "
-"rel=\"nofollow\">The Islamic Cresent's Observation Project \"ICOP\"</a> for "
-"granting a permission to use there lists of \"Arabic\" Constellations and "
-"star names."
-msgstr ""
-"<a href=\"http://www.icoproject.org/star.html\" class='external text' "
-"rel=\"nofollow\">Проекту спостереження «Ісламський півмісяць» (ICOP)</a> за "
-"надання дозволу щодо використання списків арабських сузір’їв та назв зірок."
-
-#. type: Content of: <ul><li>
-#: ../../skycultures/arabic/description.en.utf8:30
-msgid "Arabic Stellarium Translation team"
-msgstr "Арабській команді перекладачів Stellarium"
-
-#. type: Content of: <h3>
-#: ../../skycultures/arabic/description.en.utf8:32
-msgid "Source"
-msgstr "Джерела"
-
-#. type: Content of: <ul><li>
-#: ../../skycultures/arabic/description.en.utf8:34
-msgid ""
-"<a "
-"href=\"http://gallica.bnf.fr/ark:/12148/btv1b60006156.image.f7.pagination\" "
-"class='external text' rel=\"nofollow\">Bibliothéque Nqtionqle de France; "
-"Départment des manuscrits, Arabe 5036</a>"
-msgstr ""
-"<a "
-"href=\"http://gallica.bnf.fr/ark:/12148/btv1b60006156.image.f7.pagination\" "
-"class='external text' rel=\"nofollow\">Bibliothéque Nqtionqle de "
-"France;Départment des manuscrits, Arabe 5036 </a>"
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:37
-msgid ""
-"The Arabic star names were compiled and added to Stellarium by Khalid "
-"Alajaji"
-msgstr ""
-"Автором збирання та додавання арабських назв зірок до Stellarium є Халід "
-"Аладжазі"
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:38
-msgid ""
-"The Arabic constellation lines and images prepared by Kutaibaa Akraa "
-"(kutaibaa@gmail.com)"
-msgstr ""
-"Автором приготування ліній арабських сузір’їв та їхніх зображень є Кутайбаа "
-"Акраа (kutaibaa@gmail.com)"
-
-#. type: Content of: <p>
-#: ../../skycultures/arabic/description.en.utf8:39
-msgid "English translation by Kutaibaa Akraa"
-msgstr "Переклад англійською: Кутайбаа Акраа"
 
 #. type: Content of: <h2>
 #: ../../skycultures/arabic_moon_stations/description.en.utf8:1
@@ -4248,6 +3841,32 @@ msgstr ""
 "коментарям та/або доповненням, метою яких є збереження знань та суті "
 "ацтецької культури."
 
+#. type: Content of: <h3>
+#: ../../skycultures/aztec/description.en.utf8:31
+#: ../../skycultures/belarusian/description.en.utf8:31
+#: ../../skycultures/chinese/description.en.utf8:2973
+#: ../../skycultures/chinese_contemporary/description.en.utf8:14
+#: ../../skycultures/chinese_medieval/description.en.utf8:29
+#: ../../skycultures/dakota/description.en.utf8:50
+#: ../../skycultures/egyptian/description.en.utf8:7
+#: ../../skycultures/hawaiian_starlines/description.en.utf8:86
+#: ../../skycultures/inuit/description.en.utf8:25
+#: ../../skycultures/japanese_moon_stations/description.en.utf8:273
+#: ../../skycultures/korean/description.en.utf8:7
+#: ../../skycultures/macedonian/description.en.utf8:62
+#: ../../skycultures/maori/description.en.utf8:4
+#: ../../skycultures/navajo/description.en.utf8:6
+#: ../../skycultures/norse/description.en.utf8:3
+#: ../../skycultures/ojibwe/description.en.utf8:41
+#: ../../skycultures/sardinian/description.en.utf8:4
+#: ../../skycultures/tupi/description.en.utf8:17
+#: ../../skycultures/vanuatu_netwar/description.en.utf8:53
+#: ../../skycultures/western/description.en.utf8:14
+#: ../../skycultures/western_SnT/description.en.utf8:12
+#: ../../skycultures/western_rey/description.en.utf8:73
+msgid "External links"
+msgstr "Зовнішні посилання:"
+
 #. type: Content of: <ul><li>
 #: ../../skycultures/aztec/description.en.utf8:33
 msgid ""
@@ -4377,6 +3996,13 @@ msgstr ""
 "<a "
 "href=\"http://sepiensa.org.mx/contenidos/fd_depo/nahuatl/tlach_1.html\">Tlachtli</a>"
 
+#. type: Content of: <h3>
+#: ../../skycultures/aztec/description.en.utf8:51
+#: ../../skycultures/mulapin/description.en.utf8:556
+#: ../../skycultures/seleucid/description.en.utf8:468
+msgid "Thanks to"
+msgstr "Подяки"
+
 #. type: Content of: <ul><li>
 #: ../../skycultures/aztec/description.en.utf8:53
 msgid "Javier G&#243;mez Sandoval"
@@ -4453,6 +4079,17 @@ msgstr ""
 "зоряного неба. Наведені ілюстрації, звичайно ж, не є повними. Фактично, "
 "багато астеризмів має декілька записаних назв, вік яких коливається від "
 "сивої давнини до християнських часів."
+
+#. type: Content of: <p><h3>
+#: ../../skycultures/belarusian/description.en.utf8:8
+#: ../../skycultures/chinese_contemporary/description.en.utf8:5
+#: ../../skycultures/macedonian/description.en.utf8:4
+#: ../../skycultures/mongolian/description.en.utf8:15
+#: ../../skycultures/tupi/description.en.utf8:4
+#: ../../skycultures/western/description.en.utf8:4
+#: ../../skycultures/western_SnT/description.en.utf8:4
+msgid "Constellations"
+msgstr "Сузір'я"
 
 #. type: Content of: <ul><li>
 #: ../../skycultures/belarusian/description.en.utf8:10
